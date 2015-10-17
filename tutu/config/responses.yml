@@ -1,0 +1,33 @@
+recommendation_test_1:
+  request:
+    path: "/graphaware/recommendation/1"
+    methods: ['GET']
+    query:
+      "limit": "30"
+  response:
+    headers:
+        "Content-type": "application/json"
+    status: 200
+    content: @resources/recommendation/1.json.twig
+recommendation_test_5:
+  request:
+    path: "/graphaware/recommendation/5"
+    methods: ['GET']
+    query:
+      "limit": "30"
+  response:
+    headers:
+        "Content-type": "application/json"
+    status: 404
+    content: "Could not find id 5"
+recommendation_test_6:
+  request:
+    path: "/graphaware/recommendation/6"
+    methods: ['GET']
+    query:
+      "limit": "30"
+  response:
+    headers:
+        "Content-type": "application/json"
+    status: 500
+    content: "Server failed unexpectantly"

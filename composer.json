@@ -1,0 +1,31 @@
+{
+    "name": "peterfox/graphaware-reco-client",
+    "description": "An API client implemented in PHP to work with GraphAware's Recommendation framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Peter Fox",
+            "email": "peter.fox@peterfox.me"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "GraphAwareReco\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle-services": "~0.4.0"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.0",
+        "coduo/tutu": "^1.0@dev",
+        "coduo/tutu-twig-extension": "1.0.*@dev",
+        "behat/behat": "~3.0.4",
+        "bossa/phpspec2-expect": "~1.0.3",
+        "symfony/process": "2.7.5"
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}

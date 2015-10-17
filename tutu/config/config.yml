@@ -1,0 +1,5 @@
+twig: # optional, must be a valid array. Passed to twig env
+    debug: false
+    auto_reload: false
+extensions:
+    Coduo\TuTu\Extension\Twig: ~
